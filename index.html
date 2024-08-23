@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="style2.css">
+
+</head>
+
+<body>
+
+
+    <section class="main">
+        <div class="form_wrapper">
+            <input type="radio" class="radio" name="radio" id="login" checked />
+            <input type="radio" class="radio" name="radio" id="signup" />
+            <div class="tile">
+                <h3 class="login">Login Form</h3>
+                <h3 class="signup">Registation Form</h3>
+            </div>
+
+            <label class="tab login_tab" for="login">
+                Login
+            </label>
+
+            <label class="tab signup_tab" for="signup">
+                Register
+            </label>
+            <span class="shape"></span>
+            <div class="form_wrap">
+                <form class="form_fild login_form needs-validation" novalidate>
+                    <div class="input_group">
+                        <input type="email" class="input" placeholder="Email Address" required />
+                    </div>
+                    <div class="input_group">
+                        <input type="password" class="input" placeholder="Password" required />
+                    </div>
+
+                    <a href="#forgot" class="forgot">Forgot password?</a>
+
+                    <button type="submit" class="btn" value="Login">Login</button>
+
+                    <div class="not_mem">
+                        <label for="signup">Not a member? <span> Register now</span></label>
+                    </div>
+                </form>
+
+
+                <form class="form_fild signup_form needs-validation" novalidate>
+                    <div class="input_group">
+                        <input type="email" class="input" placeholder="Email Address" required />
+                    </div>
+                    <div class="input_group">
+                        <input type="password" class="input" placeholder="Password" required />
+                    </div>
+
+                    <div class="input_group">
+                        <input type="password" class="input" placeholder="Confirm Password" required />
+                    </div>
+
+                    <button type="submit" class="btn" value="Register"> Register</button>
+
+                </form>
+            </div>
+        </div>
+
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <script>
+        (function () {
+            'use strict';
+            window.addEventListener('load', function () {
+                // Get the forms we want to add validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+
+
+
+
+
+    </script>
+
+
+    
+
+</body>
+
+</html>

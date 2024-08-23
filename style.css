@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+}
+
+.form_wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 360px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 40px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+}
+
+.form_wrapper .tile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.form_wrapper .tile h3 {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+.form_wrapper .tab {
+  display: none;
+}
+
+.form_wrapper .shape {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-top: 80px solid #007bff;
+  border-right: 80px solid transparent;
+}
+
+.form_wrapper .form_wrap {
+  position: relative;
+}
+
+.form_wrapper .input_group {
+  margin-bottom: 20px;
+}
+
+.form_wrapper .input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form_wrapper .btn {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.form_wrapper .not_mem {
+  margin-top: 20px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.form_wrapper .not_mem span {
+  color: #007bff;
+  cursor: pointer;
+}
+
+.form_wrapper .not_mem span:hover {
+  text-decoration: underline;
+}
+
+.form_wrapper .forgot {
+  display: block;
+  text-align: right;
+  margin-bottom: 10px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.form_wrapper .forgot:hover {
+  text-decoration: underline;
+}
+
+/* Form validation styles */
+.invalid-feedback {
+  display: block;
+  width: 100%;
+  margin-top: .25rem;
+  font-size: 80%;
+  color: #dc3545;
+}
+
+.valid-feedback {
+  display: block;
+  width: 100%;
+  margin-top: .25rem;
+  font-size: 80%;
+  color: #28a745;
+}
